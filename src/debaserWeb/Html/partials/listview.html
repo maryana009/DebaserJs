@@ -1,0 +1,7 @@
+﻿<div infinite-scroll="lazyList.loadMoreItems()" infinite-scroll-disabled="lazyList.busy" infinite-scroll-distance='1'>
+    <div ng-repeat="item in lazyList.list" ng-include="'templates/listitemtemplate.html'" ng-click="itemId($index)" />
+    <div ng-show='lazyList.busy'>Loading data...</div>
+</div>
+
+
+

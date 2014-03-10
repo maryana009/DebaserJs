@@ -1,0 +1,51 @@
+﻿<div class="detailHeaderLayout">
+    <div class="detailImg">
+        <img ng-src="{{detailId.item.ImageUrl}}" class="detailUrl" />
+    </div>
+    <div class="detailItemName">
+        {{detailId.item.Event}}
+    </div>
+    <div class="detailItemSubName">
+        {{detailId.item.SubHead}}
+    </div>
+</div>
+<div class="detailContentLayout">
+    <table>
+        <tr>
+            <td class ="bindingContentLayout">
+                Plats:
+            </td>
+            <td>
+                {{detailId.item.Venue}} - {{detailId.item.EventDate}}
+            </td>
+        </tr>
+        <tr>
+            <td class="bindingContentLayout">
+                Tid:
+            </td>
+            <td>
+                {{detailId.item.Open}}
+            </td>
+        </tr>
+        <tr>
+            <td class="bindingContentLayout">
+                Ålder:
+            </td>
+            <td>
+                {{detailId.item.Age}}
+            </td>
+        </tr>
+        <tr>
+            <td class="bindingContentLayout" style="vertical-align: top;">
+                Pris:
+            </td>
+            <td>
+                {{detailId.item.Admission}}
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="detailsDescriptionLayout">
+    {{detailId.item.Description}}
+</div>
+
